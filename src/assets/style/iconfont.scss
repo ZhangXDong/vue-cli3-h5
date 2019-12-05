@@ -1,0 +1,20 @@
+// 阿里矢量图网站 copy过来发现icon不能展示出来。需要加 http：
+@font-face {
+  font-family: 'iconfont';  /* project id 1113135 */
+  src: url('http://at.alicdn.com/t/font_1113135_7hygfq2pzvi.eot');
+  src: url('http://at.alicdn.com/t/font_1113135_7hygfq2pzvi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_1113135_7hygfq2pzvi.woff2') format('woff2'),
+  url('http://at.alicdn.com/t/font_1113135_7hygfq2pzvi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_1113135_7hygfq2pzvi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_1113135_7hygfq2pzvi.svg#iconfont') format('svg');
+}
+
+.iconfont { 
+    font-family:"iconfont"!important; 
+    font-size:20px;
+    font-style:normal; 
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px; 
+    -moz-osx-font-smoothing: grayscale;
+}

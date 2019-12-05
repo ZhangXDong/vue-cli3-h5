@@ -1,0 +1,27 @@
+@import './animate.scss';   //	过渡动画	
+@import './reset.scss';	    //	样式重置
+@import './common.scss';	//	公用样式
+@import './mixin.scss';   	//	mixin scss
+@import './vant.scss';   	//	mixin scss
+@import './iconfont.scss';	//	iconfont
+
+$mock-a_color:#409EFF; // 可以点击跳转的颜色和按钮背景色和border颜色
+$dialog_header_footer: #f5f7fa;
+$content_padding: 16px; // 内容区padding大小
+$input_inner: 28px; // input的高度
+
+// 内容区 padding min-width
+.ld-container_content {
+    padding: $content_padding;
+    padding-bottom: 10px;
+}
+// 纵向flex flex1撑满
+.ld-flex {
+    display: flex; // layout.vue 中 el-main 默认是display: block; 强制覆盖掉样式，否则主内容区撑不开
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    overflow: hidden;   
+    position: relative;
+}
+
