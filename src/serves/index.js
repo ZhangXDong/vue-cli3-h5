@@ -1,6 +1,6 @@
 import axios from 'axios'
 import Vue from 'vue'
-import store from './../store'
+import store from '../store/store'
 import HOST_CONF from '../../build/config.js'
 import { Notify } from 'vant'
 Vue.use(Notify)

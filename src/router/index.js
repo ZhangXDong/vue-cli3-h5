@@ -30,11 +30,12 @@ router.beforeEach((to, from, next) => {
     let token = getToken()
     console.log(token);
     // !whiteList.includes(to.path)
-    if (!token && to.path != '/login') {
-        return next('/login')
-    } else {
-        return next()
-    }
+    // if (!token && to.path != '/login') {
+    //     return next('/login')
+    // } else {
+    //     return next()
+    // }
+    return next()
 })
 
 

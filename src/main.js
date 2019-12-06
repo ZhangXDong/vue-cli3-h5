@@ -14,9 +14,14 @@ import './public/vantPublicCom.js'
 // 全局注册 公共组件
 import './public/publicComs.js'
 
+// md5
+import { md5Obj } from './utils/encrypt'
+
 // log
 import Vconsole from 'vconsole';
 const vConsole = new Vconsole();
+
+Vue.prototype.$md5 = md5Obj
 
 Vue.config.productionTip = false
 

@@ -1,16 +1,12 @@
 import reqFunc from './index.js'
+import HOST_CONF from '../../build/config.js'
+let loginURL = HOST_CONF.baseUrl
 
-//  刷卡登录
-// export function loginByCard(data) {
-//     return reqFunc.post('/user/loginByCard', data)
-// }
-
-// 账号登陆
-export function loginByAccount(data) {
-    return reqFunc.post('/user/loginSaasForMobile', data)
+//	登录
+export function login(data) {
+    return reqFunc.post(`${loginURL}/user/login`, data)
 }
-
-// 账号退出
-export function logoutByAccount(data) {
-    return reqFunc.get('/user/logout', data)
+//	退出
+export function logout(data) {
+    return reqFunc.get(`${loginURL}/user/logout`, data)
 }
